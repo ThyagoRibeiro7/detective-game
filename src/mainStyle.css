@@ -1,0 +1,113 @@
+/* mainContainer style */
+
+.main_container{
+    border: 0.2rem solid var(--light-color);
+    border-radius: var(--border-radius);
+    padding: 8.5rem 4rem;
+    max-width: clamp(50rem, 70vw, 150rem);
+    position: relative;
+}
+
+.main_container .suspects_container{
+    display: flex;
+    gap: 0.1rem;
+    margin-bottom: 6rem;
+    max-width: 100%;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    overflow: hidden;
+}
+
+.main_container .suspects_container img{
+    aspect-ratio: 1 / 1; 
+    margin: 0 auto;
+    scroll-snap-align: start; 
+}
+
+.swipper_wrapper { position: relative; }
+
+.swipper_wrapper .arrow{
+    background-color: #202020;
+    padding: 0.5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    cursor: pointer;
+}
+
+.swipper_wrapper .arrow{ display: none }
+
+.swipper_wrapper .back_arrow{
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.swipper_wrapper .foward_arrow{
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.main_container .form_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    max-width: 100%;
+}
+
+.main_container .form_container h1{
+    font-size: clamp(2rem, 3.5vw, 3rem);
+    font-weight: var(--bold-fw);
+}
+
+.main_container .form_container span{ 
+    font-size: clamp(1.5rem, 2vw, 2rem); 
+    font-weight: var(--bold-fw);
+}
+
+.form_container form input{
+    max-width: clamp(27rem, 40vw, 40rem);
+    width: 40rem;
+    padding: 1.5rem 1rem;
+    border: 1px solid var(--light-color);
+    color: var(--light-color);
+    border-radius: var(--border-radius);
+    background-color: transparent;
+}
+
+.form_container form input:focus{
+    outline: none;
+}
+
+.form_container form input::placeholder{
+    color: var(--light-color);
+    opacity: 0.8;
+}
+
+.form_container .search_btn{
+    max-width: clamp(50rem, 20vw, 20rem);
+    width: 15rem;
+    padding: 1.5rem 1rem;
+    color: var(--light-color);
+    border: 1px solid var(--light-color);
+    border-radius: 1rem;
+    background-color: transparent;
+    transition: all 0.3s;
+}
+
+.form_container button:hover{
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    cursor: pointer;
+}
+
+.detectiveImg-container{
+    position: absolute;
+    bottom: -0.5rem;
+    left: -2rem;
+}
