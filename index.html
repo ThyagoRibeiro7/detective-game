@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/reset.css">
+    <link rel="stylesheet" href="./src/mainStyle.css">
+    <link rel="stylesheet" href="./src/failAndPass.css">
+    <link rel="stylesheet" href="./src/mediaquerie.css">
+    <link rel="shortcut icon" href="./images/LogoDetetive.png" type="image/x-icon">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        <script defer src="./scripts/main.js"></script>
+        <script defer src="./scripts/mobile.js"></script>
+    <title>Detective Game</title>
+</head>
+
+<body>
+    <main class="main_container">
+
+        <div class="swipper_wrapper">
+            <div id="left" class="back_arrow arrow">
+                <span class="material-symbols-outlined">
+                    arrow_back_ios
+                </span>
+            </div>
+
+            <section class="suspects_container">
+
+                <img src="./images/Suspect1.png" alt="suspectOne">
+                <img src="./images/Suspect2.png" alt="suspectTwo">
+                <img src="./images/Suspect3.png" alt="suspectThree">
+                <img src="./images/Suspect4.png" alt="suspectFour">
+                <img src="./images/Suspect5.png" alt="suspectFive">
+
+            </section>
+
+            <div id="right" class="foward_arrow arrow">
+                <span class="material-symbols-outlined">
+                    arrow_forward_ios
+                </span>
+            </div>
+
+        </div>
+
+        <section class="form_container">
+            <h1>Enter a characteristic to discover who killed our victim.</h1>
+            <span>Click on the "Search" button to discover the killer.</span>
+            <form>
+                <label for="suspectInput">
+                    <input type="text" name="suspectInput" id="suspectInput"
+                        placeholder="For example, black hair or blue eyes.">
+                </label>
+            </form>
+            <button class="search_btn" type="button">Search</button>
+
+            <div class="detectiveImg-container">
+                <img src="./images/DetetiveComLupa.png" alt="DetetiveComLupa">
+            </div>
+        </section>
+
+        <section class="pass_container">
+            <h2>Congratulations, you found the killer!</h2>
+            <button class="restart_btn" type="button">Restart</button>
+                <img src="./images/DetetiveComCharuto.png" alt="DetetiveComCharuto">
+                <img src="./images/Passos.png" alt="ImagemDePegadas">
+        </section>
+
+        <section class="fail_container">
+            <h2>The characteristic is not valid, please restart the game!</h2>
+            <button class="restart_btn" type="button">Restart</button>
+        </section>
+
+
+    </main>
+</body>
+
+</html>
