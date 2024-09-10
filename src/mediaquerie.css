@@ -1,4 +1,22 @@
- @media (min-width: 300px) {
+@media (max-width: 1000px){
+    .swipper_wrapper .arrow{
+        display: flex;
+    }
+}
+
+@media (max-width: 830px) {
+    .detectiveImg-container img {
+        display: none;
+    }
+}
+
+@media (max-width: 880px) {
+    .main_container .pass_container img, .fail_container img {
+        display: none;
+    }
+}
+
+@media (min-width: 300px) {
     .main_container{
         padding: 8.5rem 2rem; 
     }
@@ -10,10 +28,8 @@
     .main_container .form_container{
         text-align: center;
     }
-}
 
-@media (max-width: 800px){
-    .swipper_wrapper .arrow{
-        display: flex;
+    .main_container .pass_container h2, .fail_container h2{
+        text-align: center;
     }
 }
