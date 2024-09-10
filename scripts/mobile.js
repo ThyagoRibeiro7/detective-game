@@ -2,14 +2,6 @@ const suspectsContainer = document.querySelector('.suspects_container');
 const arrowBtns = document.querySelectorAll('.arrow');
 const firstImgWidth = document.querySelector('.suspects_container img').offsetWidth;
 
-/*
-
-scrollLeft: the scroll position of the element;
-offsetWidth: the visible element width;
-scrollWidth: the total element width.
-
-*/
-
 arrowBtns.forEach(arrowBtn => {
     arrowBtn.addEventListener('click', () => {
         suspectsContainer.scrollLeft += arrowBtn.id === 'left' ? -firstImgWidth : firstImgWidth;
@@ -34,3 +26,5 @@ function showAndHideArrows() {
         arrowBtns[1].style.display = 'flex';
     }
 };
+
+// document.querySelectorAll('img').setAttribute('draggable', false);
